@@ -57,7 +57,7 @@ const ViewStudent = () => {
     useEffect(() => {
         // Fetch teacher data based on the email parameter
         axios
-        .get(`http://localhost:4000/api/v1/adminRoute/getAllStudents?email=${email}`, {
+        .get(`https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAllStudents?email=${email}`, {
             withCredentials: true,
             headers: {
                 Authorization: `Bearer ${authToken}`,

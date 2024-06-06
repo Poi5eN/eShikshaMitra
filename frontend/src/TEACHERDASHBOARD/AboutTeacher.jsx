@@ -64,7 +64,7 @@ const AboutTeacher = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:4000/api/v1/adminRoute/getTeachers?email=${email}`,
+        `https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getTeachers?email=${email}`,
         {
           withCredentials: true,
           headers: {

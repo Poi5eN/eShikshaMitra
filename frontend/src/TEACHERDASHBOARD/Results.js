@@ -5,13 +5,13 @@ import { useStateContext } from "../contexts/ContextProvider";
 const authToken = Cookies.get("token");
 
 export const GET_ALL_EXAMS_API =
-  "http://localhost:4000/api/v1/exam/getAllExams";
+  "https://eshiksh-mitra-project.vercel.app/api/v1/exam/getAllExams";
 export const GET_ALL_STUDENTS_API =
-  "http://localhost:4000/api/v1/adminRoute/getAllStudents?studentClass=11&studentSection=A";
+  "https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAllStudents?studentClass=11&studentSection=A";
 export const CREATE_RESULTS_API =
-  "http://localhost:4000/api/v1/results/createResults";
+  "https://eshiksh-mitra-project.vercel.app/api/v1/results/createResults";
 export const GET_RESULTS_API =
-  "http://localhost:4000/api/v1/results/getResults";
+  "https://eshiksh-mitra-project.vercel.app/api/v1/results/getResults";
 
 const Results = () => {
 
@@ -157,7 +157,7 @@ const Results = () => {
 
       axios
         .get(
-          `http://localhost:4000/api/v1/adminRoute/getAllStudents?studentClass=${classTeacher}&studentSection=${section}`,
+          `https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAllStudents?studentClass=${classTeacher}&studentSection=${section}`,
           {
             withCredentials: true,
             headers: {

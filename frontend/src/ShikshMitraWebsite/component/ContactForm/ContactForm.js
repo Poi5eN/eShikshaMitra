@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 const authToken = Cookies.get("token");
 
 const API_BASE_URL =
-  "http://localhost:4000/api/v1/ContactUs";
+  "https://eshiksh-mitra-project.vercel.app/api/v1/ContactUs";
 //  const api_url = `/api/v1/contactUs/`
 const showErrorToast = (message) => {
   toast.error(message, {
@@ -174,7 +174,7 @@ export default Form2;
 // const authToken = Cookies.get("token");
 
 // const API_BASE_URL =
-//   "http://localhost:4000/api/v1/ContactUs";
+//   "https://eshiksh-mitra-project.vercel.app/api/v1/ContactUs";
 // //  const api_url = `/api/v1/contactUs/`
 // const showErrorToast = (message) => {
 //   toast.error(message, {

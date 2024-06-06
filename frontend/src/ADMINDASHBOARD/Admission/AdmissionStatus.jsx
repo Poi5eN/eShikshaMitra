@@ -30,7 +30,7 @@ function AdmissionStatus({ data }) {
     // Fetch data from the server when the component mounts
     axios
       .get(
-        "http://localhost:4000/api/v1/adminRoute/getLastYearStudents",
+        "https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getLastYearStudents",
         {
           withCredentials: true,
           headers: {

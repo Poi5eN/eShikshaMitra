@@ -39,7 +39,7 @@ const ExamChart = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:4000/api/v1/exam/getAllExams`,
+        `https://eshiksh-mitra-project.vercel.app/api/v1/exam/getAllExams`,
         {
           withCredentials: true,
           headers: {

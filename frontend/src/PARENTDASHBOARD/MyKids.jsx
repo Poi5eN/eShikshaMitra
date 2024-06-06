@@ -15,7 +15,7 @@ const MyKids = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:4000/api/v1/adminRoute/myKids`,
+        `https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/myKids`,
         {
           withCredentials: true,
           headers: {
@@ -39,7 +39,7 @@ const MyKids = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:4000/api/v1/adminRoute/getAdminInfo`,
+        `https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAdminInfo`,
         {
           withCredentials: true,
           headers: {

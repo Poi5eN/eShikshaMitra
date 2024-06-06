@@ -35,7 +35,7 @@ const Scheduler = () => {
 
           const data = args.data;
           // console.log(data)
-            axios.delete(`http://localhost:4000/api/v1/events/deleteEvent/${data._id}`, 
+            axios.delete(`https://eshiksh-mitra-project.vercel.app/api/v1/events/deleteEvent/${data._id}`, 
           {
             withCredentials: true,
             headers: {
@@ -69,7 +69,7 @@ const Scheduler = () => {
 
   useEffect(async () => {
     try {
-      const response = await axios.get('http://localhost:4000/api/v1/events/getAllEvents', {
+      const response = await axios.get('https://eshiksh-mitra-project.vercel.app/api/v1/events/getAllEvents', {
         withCredentials: true,
           headers: {
             Authorization: `Bearer ${authToken}`,
@@ -183,7 +183,7 @@ const Scheduler = () => {
           EndTime: endTime,
         };
      
-      axios.post('http://localhost:4000/api/v1/events/createEvent', {
+      axios.post('https://eshiksh-mitra-project.vercel.app/api/v1/events/createEvent', {
         updatedData
       }, {
         withCredentials: true,

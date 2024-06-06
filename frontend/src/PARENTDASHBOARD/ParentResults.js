@@ -31,7 +31,7 @@ const ParentResults = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:4000/api/v1/adminRoute/myKids`,
+        `https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/myKids`,
         {
           withCredentials: true,
           headers: {
@@ -60,7 +60,7 @@ const ParentResults = () => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:4000/api/v1/exam/getAllExams",
+        "https://eshiksh-mitra-project.vercel.app/api/v1/exam/getAllExams",
         {
           withCredentials: true,
           headers: {
@@ -105,7 +105,7 @@ const ParentResults = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:4000/api/v1/adminRoute/getAdminInfo`,
+        `https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAdminInfo`,
         {
           withCredentials: true,
           headers: {
@@ -136,7 +136,7 @@ const ParentResults = () => {
       }
       axios
         .get(
-          `http://localhost:4000/api/v1/results/getResults?examName=${selectedExam}&studentId=${userId}`,
+          `https://eshiksh-mitra-project.vercel.app/api/v1/results/getResults?examName=${selectedExam}&studentId=${userId}`,
           {
             withCredentials: true,
             headers: {

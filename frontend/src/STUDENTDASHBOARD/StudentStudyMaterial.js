@@ -16,7 +16,7 @@ const StudentStudyMaterial = () => {
     image: null,
   });
 
-  const API_BASE_URL = "http://localhost:4000/api/v1/teacher";
+  const API_BASE_URL = "https://eshiksh-mitra-project.vercel.app/api/v1/teacher";
 
   useEffect(() => {
     // Fetch materials from the server using a GET request

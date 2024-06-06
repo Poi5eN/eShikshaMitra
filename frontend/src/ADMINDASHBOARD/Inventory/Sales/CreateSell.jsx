@@ -47,7 +47,7 @@ const modalStyle = {
 
   useEffect(() => {
 
-    axios.get('http://localhost:4000/api/v1/adminRoute/getAllItems', {
+    axios.get('https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAllItems', {
       withCredentials: true,
       headers: {
         Authorization: `Bearer ${authToken}`,

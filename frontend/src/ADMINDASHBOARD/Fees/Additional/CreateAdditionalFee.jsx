@@ -40,7 +40,7 @@ function CreateAdditionalFee() {
   const [shouldFetchData, setShouldFetchData] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:4000/api/v1/adminRoute/getAdditionalFees', {
+    axios.get('https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAdditionalFees', {
       withCredentials: true,
       headers: {
         Authorization: `Bearer ${authToken}`,
@@ -75,7 +75,7 @@ function CreateAdditionalFee() {
     try {
       setLoading(true)
       const response = await axios.post(
-        "http://localhost:4000/api/v1/adminRoute/createAdditionalFees",
+        "https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/createAdditionalFees",
         formDataToSend,
         {
           withCredentials: true,
@@ -108,7 +108,7 @@ function CreateAdditionalFee() {
   };
 
   const handleDelete = (itemId) => {
-    axios.delete(`http://localhost:4000/api/v1/adminRoute/deleteFees/${itemId}`,
+    axios.delete(`https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/deleteFees/${itemId}`,
       {
         withCredentials: true,
         headers: {

@@ -12,7 +12,7 @@ const Queries = () => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:4000/api/v1/adminRoute/getAdminInfo",
+        "https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAdminInfo",
         {
           withCredentials: true,
           headers: {

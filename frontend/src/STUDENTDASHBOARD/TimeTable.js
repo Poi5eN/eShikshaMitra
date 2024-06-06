@@ -32,7 +32,7 @@ const Lectures = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:4000/api/v1/timeTable/getClassTimeTable?className=${data.class}&section=${data.section}`,
+        `https://eshiksh-mitra-project.vercel.app/api/v1/timeTable/getClassTimeTable?className=${data.class}&section=${data.section}`,
         {
           withCredentials: true,
       headers: {

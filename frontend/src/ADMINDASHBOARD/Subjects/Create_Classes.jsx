@@ -73,7 +73,7 @@ function Create_Classes() {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/v1/adminRoute/createTeacher",
+        "https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/createTeacher",
         formDataToSend,
         {
           headers: {

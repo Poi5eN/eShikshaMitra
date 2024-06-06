@@ -16,7 +16,7 @@ const BookManagement = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:4000/api/v1/adminRoute/getIssueBookToMe`,
+        `https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getIssueBookToMe`,
         {
           withCredentials: true,
           headers: {

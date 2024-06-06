@@ -11,7 +11,7 @@ function DynamicDataTable() {
     // Fetch data from the server when the component mounts
     axios
       .get(
-        "http://localhost:4000/api/v1/adminRoute/getAllParents",
+        "https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAllParents",
         {
           withCredentials: true,
           headers: {

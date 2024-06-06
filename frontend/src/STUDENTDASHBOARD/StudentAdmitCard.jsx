@@ -29,7 +29,7 @@ const StudentAdmitCard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/v1/adminRoute/getAdminInfo", {
+      .get("https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAdminInfo", {
         withCredentials: true,
       headers: {
         Authorization: `Bearer ${authToken}`,
@@ -50,7 +50,7 @@ const StudentAdmitCard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/v1/exam/getAllExams", {
+      .get("https://eshiksh-mitra-project.vercel.app/api/v1/exam/getAllExams", {
         withCredentials: true,
       headers: {
         Authorization: `Bearer ${authToken}`,

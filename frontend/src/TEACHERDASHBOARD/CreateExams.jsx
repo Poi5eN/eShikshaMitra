@@ -32,7 +32,7 @@ const CreateExams = () => {
 
     console.log("use effect");
 
-    axios.get(`http://localhost:4000/api/v1/exam/getAllExams?className=${data.classTeacher}&section=${data.section}`, {
+    axios.get(`https://eshiksh-mitra-project.vercel.app/api/v1/exam/getAllExams?className=${data.classTeacher}&section=${data.section}`, {
       withCredentials: true,
           headers: {
             Authorization: `Bearer ${authToken}`,
@@ -106,7 +106,7 @@ const CreateExams = () => {
   const handleDelete= async (id)=>{
 
     try {
-      const response = await axios.delete(`http://localhost:4000/api/v1/exam/deleteExam/${id}`, {
+      const response = await axios.delete(`https://eshiksh-mitra-project.vercel.app/api/v1/exam/deleteExam/${id}`, {
         withCredentials: true,
           headers: {
             Authorization: `Bearer ${authToken}`,
@@ -127,7 +127,7 @@ const CreateExams = () => {
   const handleSubmit = async () => {
     try {
   
-      await axios.post("http://localhost:4000/api/v1/exam/createExam", formData, {
+      await axios.post("https://eshiksh-mitra-project.vercel.app/api/v1/exam/createExam", formData, {
         withCredentials: true,
       headers: {
         Authorization: `Bearer ${authToken}`,

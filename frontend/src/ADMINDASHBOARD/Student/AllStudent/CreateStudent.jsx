@@ -60,7 +60,7 @@ function CreateStudent() {
     // Fetch data from the server when the component mounts
     axios
       .get(
-        "http://localhost:4000/api/v1/adminRoute/getAllStudents",
+        "https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAllStudents",
         {
           withCredentials: true,
           headers: {
@@ -126,7 +126,7 @@ function CreateStudent() {
     try {
       setLoading(true);
       const response = await axios.post(
-        "http://localhost:4000/api/v1/adminRoute/createStudentParent",
+        "https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/createStudentParent",
         formDataToSend,
         {
           withCredentials: true,
@@ -175,7 +175,7 @@ function CreateStudent() {
   const handleDelete = (email) => {
     axios
       .put(
-        `http://localhost:4000/api/v1/adminRoute/deactivateStudent`,
+        `https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/deactivateStudent`,
         { email },
         {
           withCredentials: true,

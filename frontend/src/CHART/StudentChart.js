@@ -24,7 +24,7 @@ const StudentChart = () => {
         const fetchData = async () => {
           try {
             const response = await axios.get(
-              "http://localhost:4000/api/v1/adminRoute/getAllStudents",
+              "https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAllStudents",
               {
                 withCredentials: true,
       headers: {

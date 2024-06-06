@@ -21,7 +21,7 @@ function DynamicDataTable({ data, handleDelete }) {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:4000/api/v1/adminRoute/getAllEmployees`,
+        `https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAllEmployees`,
         {
           withCredentials: true,
           headers: {

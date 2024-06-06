@@ -10,7 +10,7 @@ const ExpensesChart = () => {
 
   useEffect(() => {
 
-    axios.get('http://localhost:4000/api/v1/employee/salaryExpensesMonths', 
+    axios.get('https://eshiksh-mitra-project.vercel.app/api/v1/employee/salaryExpensesMonths', 
     {
       withCredentials: true,
       headers: {

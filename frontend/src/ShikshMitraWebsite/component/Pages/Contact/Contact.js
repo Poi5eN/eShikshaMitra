@@ -3,7 +3,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const API_BASE_URL =
-  "http://localhost:4000/api/v1/ContactUs";
+  "https://eshiksh-mitra-project.vercel.app/api/v1/ContactUs";
 const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState([]);
   const [formData, setFormData] = useState({

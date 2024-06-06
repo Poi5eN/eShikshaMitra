@@ -29,7 +29,7 @@ function CreateParents() {
 
   useEffect(() => {
     // Fetch data from the server when the component mounts
-    axios.get('http://localhost:4000/api/v1/adminRoute/getAllParents', 
+    axios.get('https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/getAllParents', 
     {
       withCredentials: true,
       headers: {
@@ -47,7 +47,7 @@ function CreateParents() {
   }, []);
 
   const handleDelete = (email) => {
-    axios.put(`http://localhost:4000/api/v1/adminRoute/deactivateParent`, {email}, {
+    axios.put(`https://eshiksh-mitra-project.vercel.app/api/v1/adminRoute/deactivateParent`, {email}, {
       withCredentials: true,
       headers: {
         Authorization: `Bearer ${authToken}`,

@@ -10,7 +10,7 @@ const AllIncomeChart = () => {
 
   useEffect(() => {
 
-    axios.get('http://localhost:4000/api/v1/fees/feeIncomeMonths', 
+    axios.get('https://eshiksh-mitra-project.vercel.app/api/v1/fees/feeIncomeMonths', 
     {
       withCredentials: true,
       headers: {
